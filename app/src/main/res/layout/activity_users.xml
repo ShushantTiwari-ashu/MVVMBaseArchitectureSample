@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.assignment.userassignment.main.UsersActivity">
+    tools:context="com.shushant.cleancode.main.UsersActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvUsers"

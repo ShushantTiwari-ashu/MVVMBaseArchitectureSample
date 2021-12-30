@@ -1,7 +1,7 @@
 package com.assignment.userassignment.application.di
 
 import android.content.Context
-import com.assignment.assignment.BuildConfig
+import com.assignment.userassignment.BuildConfig
 import com.assignment.userassignment.database.DatabaseRepository
 import com.assignment.userassignment.network.api.ApiService
 import com.assignment.userassignment.network.api.NullOnEmptyConverterFactory

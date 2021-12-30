@@ -3,7 +3,7 @@ package com.assignment.userassignment.main.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.assignment.assignment.databinding.ItemUserLayoutBinding
+import com.assignment.userassignment.databinding.ItemUserLayoutBinding
 import com.assignment.userassignment.main.dataclass.UserDataClass
 
 class UserListAdapter() :

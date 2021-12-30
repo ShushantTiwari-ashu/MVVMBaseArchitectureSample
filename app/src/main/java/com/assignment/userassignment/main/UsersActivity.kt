@@ -3,7 +3,7 @@ package com.assignment.userassignment.main
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.assignment.assignment.databinding.ActivityUsersBinding
+import com.assignment.userassignment.databinding.ActivityUsersBinding
 import com.assignment.userassignment.main.adapter.UserListAdapter
 import com.assignment.userassignment.main.viewmodel.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint

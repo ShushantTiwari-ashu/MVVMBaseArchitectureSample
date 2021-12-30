@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.assignment.userassignment.main.dataclass.UserDataClass" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="start"
+            android:maxLines="2"
+            android:text="@{user.name}"
+            android:textAlignment="gravity"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/textSize_18sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvUserStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ramandeep Bhayana" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:gravity="end"
+            android:text="@{user.status}"
+            android:textAlignment="gravity"
+            android:textColor="@color/teal_200"
+            app:layout_constraintBottom_toBottomOf="@+id/tvUserName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvUserName"
+            tools:text="Active" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:gravity="start"
+            android:text="@{user.email}"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserStatus"
+            tools:text="raman.bhayana@gmail.com" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:gravity="start"
+            android:text="@{user.gender}"
+            android:textAlignment="gravity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserEmail"
+            tools:text="Male" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
